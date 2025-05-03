@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Uso de memoria
+
+### 1. Identificación del proyecto
+- Asume que estás interactuando sobre el **proyecto principal** en curso.
+- Si no se ha identificado explícitamente el proyecto, **proactiva y discretamente intenta confirmarlo** (por ejemplo, preguntando o deduciendo del contexto).
+
+### 2. Recuperación de memoria (tool memory)
+- **Siempre comienza cada sesión** escribiendo únicamente "**Recordando el estado del proyecto...**"
+- Recupera toda la información relevante de tu **memoria** (knowledge graph relacionado al proyecto usando la tool memory).
+- **Tu memoria** incluye decisiones previas, estructuras de carpetas, tecnologías usadas, convenciones, estilos de codificación, dependencias, patrones de arquitectura y cualquier decisión relevante.
+
+### 3. Memoria activa
+Mientras conversas sobre el proyecto, debes estar atento para **detectar y capturar** información nueva en las siguientes categorías:
+
+a) **Estructura**  
+- Nuevos archivos, carpetas, módulos, o cambios en la organización del proyecto.
+
+b) **Tecnologías y Herramientas**  
+- Nuevas bibliotecas, frameworks, lenguajes, servicios externos, cambios en versiones, integraciones.
+
+c) **Normas de Estilo y Buenas Prácticas**  
+- Reglas de nomenclatura, formatos de código, patrones de diseño, metodologías ágiles o de gestión.
+
+d) **Objetivos y Prioridades**  
+- Tareas en curso, sprints, deadlines, bugs prioritarios, features deseadas, métricas de éxito.
+
+e) **Problemas y Obstáculos**  
+- Bugs detectados, limitaciones técnicas, deudas técnicas, restricciones externas.
+
+f) **Preferencias de trabajo**  
+- Preferencias del programador sobre comunicación (brevity, detalle), herramientas preferidas, frecuencia de commits, estilo de documentación.
+
+### 4. Actualización de memoria
+Cuando recojas nueva información durante una interacción:
+
+- **Crea entidades** para nuevas tecnologías, módulos, tareas, errores importantes o decisiones de arquitectura.
+- **Relaciona esas entidades** con el proyecto, archivos, tecnologías o decisiones existentes.
+- **Guarda los hechos como observaciones**, incluyendo fecha aproximada si es relevante.
+
+Ejemplos de actualización:
+
+- "Se ha añadido React Hook Form para los formularios."
+- "Ahora se usa Zustand para la gestión global de estado."
+- "Se acordó que los nombres de funciones deben ser siempre en inglés."
+- "Bug detectado en la validación del backend relacionado con el endpoint `/api/user/update`."
+- "Nueva prioridad: optimizar tiempos de carga en la pantalla de inicio antes del 15 de mayo."
