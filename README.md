@@ -1,88 +1,50 @@
-# React Native Librerías Recomendadas
+# Welcome to your Expo app 👋
 
-Este proyecto es un catálogo interactivo de librerías populares para React Native que todo programador debe conocer, está diseñada para mostrar ejemplos prácticos y minimalistas de su uso.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## 📱 Funcionalidades
+## Get started
 
-- Muestra un listado de librerías populares para React Native
-- Cada librería tiene su propia pantalla de demostración con ejemplos prácticos
-- Diseño moderno y atractivo con animaciones utilizando react-native-reanimated y Skia
-- Interfaces de usuario optimizadas siguiendo las mejores prácticas
+1. Install dependencies
 
-## 🔍 Librerías incluidas
+   ```bash
+   npm install
+   ```
 
-- **lottie-react-native**: Animaciones Adobe After Effects
-- **react-native-toast-message**: Notificaciones toast elegantes
-- **react-native-calendar**: Componentes de calendario
-- **react-native-bottom-modal**: Modales desde la parte inferior
-- **@shopify/flash-list**: Listas optimizadas para rendimiento
-- **victory-native-xl**: Visualización de datos y gráficos
-- **react-content-loader**: Esqueletos de carga animados
-- **expo-linear-gradient**: Degradados lineales
-- **react-native-purchases**: Integración con RevenueCat para compras
-- **react-native-highlighter**: Resaltado de sintaxis de código
+2. Start the app
 
-## 🚀 Primeros pasos
+   ```bash
+   npx expo start
+   ```
 
-### Prerrequisitos
+In the output, you'll find options to open the app in a
 
-- Node.js (v16 o superior)
-- npm o yarn
-- Expo CLI instalado globalmente
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-### Instalación
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
 
 ```bash
-# Clonar el repositorio
-git clone <URL-del-repositorio>
+npm run reset-project
 ```
 
-```bash
-# Navegar al directorio
-cd rn-packages-recommended
-```
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-```bash
-# Instalar dependencias
-npm install --legacy-peer-deps
-# o
-yarn install
-```
+## Learn more
 
-```bash
-# Iniciar la aplicación
-npx expo start
-```
+To learn more about developing your project with Expo, look at the following resources:
 
-## 🧱 Estructura del proyecto
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-```
-/
-├── app/                    # Pantallas y navegación (expo-router)
-│   ├── _layout.tsx         # Configuración de rutas
-│   ├── index.tsx           # Pantalla principal
-│   ├── library/            # Pantallas de librerías específicas
-│   └── examples/           # Ejemplos de implementación
-├── components/             # Componentes reutilizables
-│   └── ui/                 # Componentes de UI
-├── constants/              # Constantes utilizadas en la app
-├── themes/                 # Configuración de temas
-└── assets/                 # Imágenes, fuentes y archivos estáticos
-```
+## Join the community
 
-## 🛠️ Tecnologías utilizadas
+Join our community of developers creating universal apps.
 
-- **React Native**: Framework principal
-- **Expo**: Plataforma para construir apps React Native
-- **TypeScript**: Tipado estático para JavaScript
-- **expo-router**: Sistema de navegación tipo metro
-- **react-native-reanimated**: Motor de animaciones avanzado
-- **@shopify/react-native-skia**: Renderizado de gráficos de alto rendimiento
-
-## 📝 Notas
-
-Cada ejemplo está diseñado para ser claro y minimalista, ideal para desarrolladores que quieren empezar a utilizar estas librerías en sus proyectos.
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT 
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
