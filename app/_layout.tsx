@@ -5,6 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -13,17 +14,35 @@ export default function RootLayout() {
   });
 
   if (!loaded) {
-    // Async font loading only occurs in development.
     return null;
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <SafeAreaProvider>  
+      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <Stack>
+          <Stack.Screen name="(content)/index" options={{ headerShown: false, headerTitle: "Examples" }} />
+          <Stack.Screen name="(content)/(examples)/bottom-sheet" options={{ headerTitle: "Bottom Sheet"}} />
+          <Stack.Screen
+            name="(content)/(examples)/bottom-sheet-expo-router"
+            options={{
+              headerTitle: "Bottom Sheet Expo Router",
+              presentation: "formSheet",
+              sheetGrabberVisible: true,
+              sheetInitialDetentIndex: 1,
+              sheetAllowedDetents: [
+                0.25,
+                0.5,
+                0.75,
+                1,
+              ],
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+        <StatusBar style="auto" />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
