@@ -15,6 +15,10 @@ const libraries = [
   {
     name: "lottie-react-native",
     url: "/(content)/(examples)/lottie-react-native",
+  },
+  {
+    name: "react-native-toast-message",
+    url: "/(content)/(examples)/toast-message",
   }
 ]
 

@@ -3,6 +3,7 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
+import Toast from 'react-native-toast-message';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -39,9 +40,11 @@ export default function RootLayout() {
             }}
           />
           <Stack.Screen name="(content)/(examples)/lottie-react-native" options={{ headerTitle: "Lottie React Native"}} />
+          <Stack.Screen name="(content)/(examples)/toast-message" options={{ headerTitle: "Toast Message"}} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
+        <Toast position="bottom" />
       </ThemeProvider>
     </SafeAreaProvider>
   );
