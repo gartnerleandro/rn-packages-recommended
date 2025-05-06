@@ -7,6 +7,8 @@ Esta aplicación recoge un listado de librerías que todo programador de React N
 - [@gorhom/bottom-sheet](https://github.com/gorhom/react-native-bottom-sheet)
 - [expo-router](https://github.com/expo/expo/tree/main/packages/expo-router)
 - [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
+- [react-native-toast-message](https://github.com/calintamas/react-native-toast-message)
+- [react-native-highlighter](https://github.com/farhoudshapouran/react-native-highlighter)
 
 ## Requisitos
 
