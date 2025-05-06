@@ -19,6 +19,10 @@ const libraries = [
   {
     name: "react-native-toast-message",
     url: "/(content)/(examples)/toast-message",
+  },
+  {
+    name: "react-native-highlighter",
+    url: "/(content)/(examples)/react-native-highlighter",
   }
 ]
 
