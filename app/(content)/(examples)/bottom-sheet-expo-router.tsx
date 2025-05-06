@@ -7,6 +7,28 @@ export default function BottomSheetExpoRouter() {
         <View style={styles.content}>
             <Text style={styles.title}>En este ejemplo puedes ver un modal en funcionamiento</Text>
             <Text>Este modal inferior es de tamaño dinámico, puedes deslizarlo hacia abajo para cerrar el modal, aunque también puedes cerrarlo tocando fuera del modal.</Text>
+            <Text>
+              {`Para que este modal funcione asegúrate de configurar correctamente el componente <Stack> en el archivo "_layout.tsx" con las siguientes opciones:`}
+            </Text>
+            <Text>
+              {`
+                <Stack.Screen
+                  name="RUTA_DE_LA_PAGINA"
+                  options={{
+                    headerTitle: "TITULO_DE_LA_PAGINA",
+                    presentation: "formSheet",
+                    sheetGrabberVisible: true,
+                    sheetInitialDetentIndex: 0,
+                    sheetAllowedDetents: [
+                      0.25,
+                      0.75,
+                      1,
+                    ],
+                    headerShown: false,
+                  }}
+                />
+              `}
+            </Text>
         </View>
     </View>
   )
