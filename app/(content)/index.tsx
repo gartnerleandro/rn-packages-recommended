@@ -33,6 +33,7 @@ export default function HomeScreen() {
       <StatusBar style="dark" />
       <FlatList
         data={libraries}
+        contentContainerStyle={styles.contentContainer}
         renderItem={({ item }) => <LibraryItem name={item.name} url={item.url} />}
       />
     </SafeAreaView>
@@ -44,8 +45,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  contentContainer: {
+    gap: 8,
+  },
   item: {
-    margin: 16,
+    marginHorizontal: 16,
     padding: 16,
     borderRadius: 16,
     backgroundColor: '#f0f0f0',
