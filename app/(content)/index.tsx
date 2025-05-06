@@ -11,6 +11,10 @@ const libraries = [
   {
     name: "expo-router-bottom-sheet",
     url: "/(content)/(examples)/bottom-sheet-expo-router",
+  },
+  {
+    name: "lottie-react-native",
+    url: "/(content)/(examples)/lottie-react-native",
   }
 ]
 

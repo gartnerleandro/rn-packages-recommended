@@ -38,6 +38,7 @@ export default function RootLayout() {
               headerShown: false,
             }}
           />
+          <Stack.Screen name="(content)/(examples)/lottie-react-native" options={{ headerTitle: "Lottie React Native"}} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
