@@ -6,6 +6,11 @@ Esta aplicación recoge un listado de librerías que todo programador de React N
 
 - [@gorhom/bottom-sheet](https://github.com/gorhom/react-native-bottom-sheet)
 - [expo-router](https://github.com/expo/expo/tree/main/packages/expo-router)
+- [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
+
+## Requisitos
+
+Para poder ejecutar la aplicación en local necesitarás tener configurado el [setup para react native](https://reactnative.dev/docs/set-up-your-environment)
 
 ## Uso
 
