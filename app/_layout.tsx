@@ -29,10 +29,9 @@ export default function RootLayout() {
               headerTitle: "Bottom Sheet Expo Router",
               presentation: "formSheet",
               sheetGrabberVisible: true,
-              sheetInitialDetentIndex: 1,
+              sheetInitialDetentIndex: 0,
               sheetAllowedDetents: [
                 0.25,
-                0.5,
                 0.75,
                 1,
               ],
