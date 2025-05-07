@@ -19,10 +19,10 @@ export default function LottieReactNative() {
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.contentContainer} bounces={false}>
         <Text style={styles.title}>Lottie en bucle</Text>
         <LottieView
-        source={require("@/assets/lotties/lottie-1.json")}
-        style={{width: 100, height: 300}}
-        autoPlay
-        loop
+            source={require("@/assets/lotties/lottie-1.json")}
+            style={{width: 100, height: 300}}
+            autoPlay
+            loop
         />
         <Text style={styles.title}>Lottie con controles</Text>
         <View style={styles.controls}>

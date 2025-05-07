@@ -31,7 +31,7 @@ const libraries = [
   {
     name: "react-native-calendars",
     url: "/(content)/(examples)/react-native-calendars",
-    image: null
+    image: require('../../assets/images/Screenshot-calendar.png')
   }
 ]
 

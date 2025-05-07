@@ -18,6 +18,8 @@ export default function CalendarListScreen() {
                     dotColor: 'red',
                 },
             }}
+            pastScrollRange={2}
+            futureScrollRange={10}
         />
     )
 }

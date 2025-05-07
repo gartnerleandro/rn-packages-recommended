@@ -2,10 +2,11 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Toast from "react-native-toast-message";
 
 export default function ToastMessage() {
-    const handleShowToast = ({ type }: { type: "success" | "error" | "info" | "warning" }) => {
+    const handleShowToast = ({ type, text, position }: { type: "success" | "error" | "info" | "warning", text: string, position: "top" | "bottom" }) => {
         Toast.show({
-            text1: "Hello",
+            text1: text,
             type: type,
+            position,
         })
     }
 
@@ -13,19 +14,19 @@ export default function ToastMessage() {
         <View style={styles.container}>
             <Text style={styles.text}>{`Para que este componente funcione asegúrate de agregar el componente <Toast /> en el archivo "_layout.tsx"`}</Text>
             <TouchableOpacity
-                onPress={() => handleShowToast({ type: "success" })}
+                onPress={() => handleShowToast({ type: "success", text: "Hello", position: "top" })}
                 style={[styles.button, styles.successButton]}
             >
                 <Text style={styles.buttonText}>Show Success Toast</Text>
             </TouchableOpacity>
             <TouchableOpacity
-                onPress={() => handleShowToast({ type: "error" })}
+                onPress={() => handleShowToast({ type: "error", text: "Error", position: "bottom" })}
                 style={[styles.button, styles.errorButton]}
             >
                 <Text style={styles.buttonText}>Show Error Toast</Text>
             </TouchableOpacity>
             <TouchableOpacity
-                onPress={() => handleShowToast({ type: "info" })}
+                onPress={() => handleShowToast({ type: "info", text: "Info", position: "top" })}
                 style={[styles.button, styles.infoButton]}
             >
                 <Text style={styles.buttonText}>Show Info Toast</Text>

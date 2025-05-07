@@ -72,8 +72,9 @@ export default function ReactNativeCalendars() {
             [dayjs().add(2, 'day').format('YYYY-MM-DD')]: {
                 selected: selected === dayjs().add(2, 'day').format('YYYY-MM-DD'),
                 marked: true,
-                dotColor: 'red',
-            },
+                dotColor: 'black',
+                selectedColor: 'orange',
+            }
           }}
         />
 
