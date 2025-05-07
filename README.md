@@ -9,6 +9,7 @@ Esta aplicación recoge un listado de librerías que todo programador de React N
 - [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
 - [react-native-toast-message](https://github.com/calintamas/react-native-toast-message)
 - [react-native-highlighter](https://github.com/farhoudshapouran/react-native-highlighter)
+- [react-native-calendars](https://github.com/wix/react-native-calendars)
 
 ## Requisitos
 
