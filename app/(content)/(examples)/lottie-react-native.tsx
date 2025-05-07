@@ -44,7 +44,8 @@ export default function LottieReactNative() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: "#FFF",
     },
     scrollView: {
         flex: 1

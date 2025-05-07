@@ -1,15 +1,13 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import 'react-native-reanimated';
 import Toast from 'react-native-toast-message';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
@@ -20,9 +18,13 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>  
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <ThemeProvider value={DefaultTheme}>
+        <StatusBar barStyle="dark-content" />
         <Stack>
-          <Stack.Screen name="(content)/index" options={{ headerShown: false, headerTitle: "Examples" }} />
+          <Stack.Screen
+            name="(content)/index"
+            options={{
+              headerShown: false, headerTitle: "Examples" }} />
           <Stack.Screen name="(content)/(examples)/bottom-sheet" options={{ headerTitle: "Bottom Sheet"}} />
           <Stack.Screen
             name="(content)/(examples)/bottom-sheet-expo-router"
@@ -44,7 +46,6 @@ export default function RootLayout() {
           <Stack.Screen name="(content)/(examples)/react-native-highlighter" options={{ headerTitle: "React Native Highlighter"}} />
           <Stack.Screen name="+not-found" />
         </Stack>
-        <StatusBar style="auto" />
         <Toast position="bottom" />
       </ThemeProvider>
     </SafeAreaProvider>

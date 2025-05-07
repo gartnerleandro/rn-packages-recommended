@@ -1,6 +1,5 @@
 import { useRouter } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const libraries = [
@@ -31,8 +30,6 @@ const libraries = [
   }
 ]
 
-const { width } = Dimensions.get('window');
-
 const LibraryItem = ({ name, url, image }: { name: string, url: string, image: any }) => {
   const router = useRouter();
 
@@ -56,7 +53,7 @@ const LibraryItem = ({ name, url, image }: { name: string, url: string, image: a
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark" />
+      <StatusBar barStyle="dark-content" />
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Paquetes Recomendados</Text>
         <Text style={styles.headerSubtitle}>React Native + Expo</Text>
@@ -79,7 +76,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#fff',
   },
   header: {
     paddingHorizontal: 16,

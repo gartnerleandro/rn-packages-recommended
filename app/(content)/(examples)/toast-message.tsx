@@ -37,7 +37,8 @@ export default function ToastMessage() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 100,
+        backgroundColor: "#FFF",
+        paddingTop: 100,
         alignItems: "center",
         gap: 10,
     },

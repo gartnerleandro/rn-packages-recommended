@@ -37,15 +37,16 @@ export default function BottomSheetExpoRouter() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      backgroundColor: "#FFF",
       justifyContent: "center",
       alignItems: "center",
+      borderTopLeftRadius: 16,
+      borderTopRightRadius: 16,
     },
     image: {
         width: "100%",
         height: 287,
-        objectFit: "contain",
-        borderTopLeftRadius: 16,
-        borderTopRightRadius: 16,
+        objectFit: "contain"
       },
       content: {
         flex: 1,

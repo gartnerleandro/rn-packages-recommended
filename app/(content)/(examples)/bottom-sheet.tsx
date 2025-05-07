@@ -52,7 +52,8 @@ const bottomSheetRef = useRef<BottomSheetModal>(null);
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: "#FFF",
   },
   buttonContainer: {
     justifyContent: 'center',
