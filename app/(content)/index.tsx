@@ -27,6 +27,11 @@ const libraries = [
     name: "react-native-highlighter",
     url: "/(content)/(examples)/react-native-highlighter",
     image: require('../../assets/images/Screenshot-highlighter.png')
+  },
+  {
+    name: "react-native-calendars",
+    url: "/(content)/(examples)/react-native-calendars",
+    image: null
   }
 ]
 

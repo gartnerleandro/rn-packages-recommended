@@ -44,6 +44,8 @@ export default function RootLayout() {
           <Stack.Screen name="(content)/(examples)/lottie-react-native" options={{ headerTitle: "Lottie React Native"}} />
           <Stack.Screen name="(content)/(examples)/toast-message" options={{ headerTitle: "Toast Message"}} />
           <Stack.Screen name="(content)/(examples)/react-native-highlighter" options={{ headerTitle: "React Native Highlighter"}} />
+          <Stack.Screen name="(content)/(examples)/react-native-calendars" options={{ headerTitle: "React Native Calendars"}} />
+          <Stack.Screen name="(content)/(calendars)/list" options={{ headerTitle: "Calendar List"}} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <Toast position="bottom" />
